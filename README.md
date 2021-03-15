@@ -34,3 +34,10 @@ npm run e2e
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Todo
+
+- [ ] Serve side fetch for bigger set of suggestions
+- [ ] Mock suggestions for E2E
+- [ ] Arrow navigation scroll down in suggestion
+- [ ] Arrow navigation scroll down in suggestion
