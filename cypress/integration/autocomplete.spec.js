@@ -19,7 +19,7 @@ describe('Nav Menus', () => {
         })
         it('Should show pre input unmatched suggestion', () => {
             cy.get('[data-cy=autocomplete-input]').type('rry', { delay: 500 })
-            cy.get('[data-cy=autocomplete-pre-input]').should('contain.value', 'Bilberry')
+            cy.get('[data-cy=autocomplete-pre-input]').should('contain', 'Bilberry')
         })
       })
       describe('When selecting suggestion', () => {
