@@ -31,7 +31,6 @@ function Home({ options }) {
 }
 
 export async function getServerSideProps() {
-  console.log(process.env.BASE_URL)
   const res = await fetch(`${process.env.baseUrl || 'http://localhost:3000'}/api/search`)
   const options = await res.json()
   return { props: { options } }
