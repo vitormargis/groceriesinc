@@ -1,4 +1,5 @@
 import React, { FC, MouseEvent } from 'react';
+import styles from './Autocomplete.module.css'
 
 interface AutocompleteOptionsProps {
   active: number,
@@ -9,11 +10,11 @@ interface AutocompleteOptionsProps {
 
 const AutocompleteOptions: FC<AutocompleteOptionsProps> = ({active, filtered, onMouseEnter, onClick})  => {
   return filtered.length ? (
-    <ul className="autocomplete-suggestions" data-cy="autocomplete-suggestions">
+    <ul className={styles.suggestions} data-cy="autocomplete-suggestions">
       {filtered.map((suggestion, index) => {
         return (
           <li 
-            className={index === active ? 'active' : ''} 
+            className={index === active ? `${styles.active} ${styles.suggestionsItem}` : styles.suggestionsItem } 
             data-cy={`autocomplete-suggestion-${index}`} 
             key={suggestion} 
             onClick={onClick} 

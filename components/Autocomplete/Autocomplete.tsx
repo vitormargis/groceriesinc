@@ -2,6 +2,7 @@ import React from "react";
 import AutocompleteSuggestions from './AutocompleteSuggestions';
 import AutocompleteInput from './AutocompleteInput';
 import useEvents from './useEvents';
+import styles from './Autocomplete.module.css'
 
 const Autocomplete = ({ options }) => {
   const { onChange,
@@ -17,7 +18,7 @@ const Autocomplete = ({ options }) => {
   } = useEvents();
 
   return (
-    <div className="autocomplete-container" data-cy="autocomplete-container">
+    <div className={styles.container} data-cy="autocomplete-container">
       <AutocompleteInput 
         onChange={(e) => onChange(e, options)}
         onKeyDown={onKeyDown}

@@ -1,4 +1,5 @@
 import React, { FC, KeyboardEvent, ChangeEvent } from 'react';
+import styles from './Autocomplete.module.css'
 
 interface AutocompleteInputProps {
   input: string,
@@ -16,13 +17,13 @@ const AutocompleteInput: FC<AutocompleteInputProps> = ({onChange, onKeyDown, inp
       onKeyDown={onKeyDown}
       value={input}
       placeholder="Search your fruit"
-      className="autocomplete-input"
+      className={styles.input}
       data-cy="autocomplete-input"
     />
     <input
       type="text"
       value={preInput}
-      className="autocomplete-pre-input"
+      className={styles.preInput}
       data-cy="autocomplete-pre-input"
       readOnly
     />
