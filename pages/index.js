@@ -31,7 +31,7 @@ function Home({ options }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api/search`)
+  const res = await fetch(`${process.env.BASE_URL}/api/search`)
   const options = await res.json()
   return { props: { options } }
 }
