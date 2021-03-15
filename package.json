@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "start:production": "next start",
     "start": "next build && next start",
     "test": "jest --watch --coverage",
     "e2e": "concurrently 'npm run dev' 'cypress run'",
