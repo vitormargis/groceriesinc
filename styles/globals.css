@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 
 a {
@@ -13,4 +14,65 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+input {
+  font-family: 'Kanit', sans-serif;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 20px 15px 15px 45px;
+  font-size: 20px;
+  width: 300px;
+  outline: none;
+  background-image: url('/search-icon.png');
+  background-size: 30px;
+  background-position: 10px 20px;
+  background-repeat: no-repeat;
+}
+
+.autocomplete-container {
+  position: relative;
+  margin-top: -150px;
+}
+
+.autocomplete-suggestions {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: 300px;
+  position: absolute;
+  box-shadow: inset 15px 0px 12px rgba(255, 255, 255, 1), 
+              inset -15px 0px 12px rgba(255, 255, 255, 1), 
+              inset 0px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.autocomplete-suggestions li {
+  padding: 15px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.autocomplete-suggestions > .active {
+  background-color: rgb(251, 244, 238);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.autocomplete-suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #ccc;
+}
+
+.autocomplete-pre-input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0.2;
 }

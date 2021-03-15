@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs should render with background image and with scrim 1`] = `
+<div
+  className="autocomplete-container"
+  data-cy="autocomplete-container"
+>
+  <input
+    className="autocomplete-input"
+    data-cy="autocomplete-input"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="Search your fruit"
+    type="text"
+    value=""
+  />
+  <input
+    className="autocomplete-pre-input"
+    data-cy="autocomplete-pre-input"
+    readOnly={true}
+    type="text"
+    value=""
+  />
+</div>
+`;
