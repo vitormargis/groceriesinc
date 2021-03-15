@@ -40,4 +40,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [ ] Serve side fetch for bigger set of suggestions
 - [ ] Mock suggestions for E2E
 - [ ] Arrow navigation scroll down in suggestion
-- [ ] Arrow navigation scroll down in suggestion
+- [ ] Fruit page after search
