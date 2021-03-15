@@ -1,6 +1,6 @@
 Search input with autocomplete to find fruits from Groceries Inc.
 
-![Example CLI running](/ycrXVcthyN.gif)
+![Example CLI running](/0i6GgKDaVv.gif)
   
 ## Getting Started
 
