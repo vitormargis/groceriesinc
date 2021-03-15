@@ -1,6 +1,7 @@
-Search input with autocomplete to find fruits from Groceries Inc.
+Search input with autocomplete to find fruits from Groceries Inc. Demo [https://groceriesinc.vercel.app/](https://groceriesinc.vercel.app/)
 
 ![Example CLI running](/XQgScitGpI.gif)
+
   
 ## Getting Started
 
