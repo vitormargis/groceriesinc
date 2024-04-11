@@ -22,7 +22,7 @@ function Home({ options }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by Groceries Inc
+          Pow ered by Groceries Inc
           <img src="/groceries.png" alt="Groceries logo" className={styles.logo} />
         </a>
       </footer>
@@ -30,7 +30,7 @@ function Home({ options }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(`${ process.env.baseUrl || 'http://localhost:3000' }/api/search`)
   const options = await res.json()
   return { props: { options } }
